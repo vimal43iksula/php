@@ -11,12 +11,12 @@ Enter First Value :
     Enter Second Value :
     <input type ="number" name ="num2">
 
- <input type="radio" value= "Addition" name="calcu"> Addition<br />
-    <input type="radio" value= "Subtraction" name="calcu"> Subtraction<br />
-    <input type="radio" value= "Multiplication" name="calcu"> Multiplication<br />
-    <input type="radio" value= "Division" name="calcu"> Division<br />
+ <input type="submit" value= "Addition" name="calcu">
+    <input type="submit" value= "Subtraction" name="calcu"> 
+    <input type="submit" value= "Multiplication" name="calcu"> 
+    <input type="submit" value= "Division" name="calcu">
 
-    <input type="submit" name="submit" value="submit">
+   
 </form>
 </body>
 </html> 
@@ -36,26 +36,25 @@ $calcu = $_POST['calcu'];
         {
 
         case "Addition":
-          
             $compute = $num1 + $num2; 
-            return $compute;
-
+            echo $compute;
             break;
+        
         case "Subtraction":
             $compute = $num1 - $num2; 
             echo $compute;
-
             break;
+        
         case "Multiplication":
             $compute = $num1 * $num2; 
             echo $compute;
-
             break;
+
         case "Division":
             $compute = $num1 / $num2; 
             echo $compute;
-
             break;
+
         default:
         echo "NOTHING!";            
         }
